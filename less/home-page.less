@@ -1,6 +1,28 @@
 // Home Content
 
 .home {
+  
+  .navbar {
+    .flex-navbar();
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    font-size: 1.8rem;
+    font-family: @nav-font;
+    background: @nav-bg;
+    border: @nav-border;
+    
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+    }
+  }
 
   .intro {
 
@@ -58,8 +80,9 @@
       }
 
       .btn {
+        .cta-btn(#f6f6f6, 10px);
       }
-    }
+        
 
     .walk-img {
       width: 46%;
@@ -72,4 +95,4 @@
       }
     }
   }
-}// home
+}}// home
